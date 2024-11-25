@@ -1,0 +1,197 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+@font-face {
+  font-family: "Inter";
+  font-weight: normal;
+  font-style: normal;
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*Custom heading styles*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  letter-spacing: -0.05em;
+}
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #872878;
+  --ifm-color-success: #3cad6e;
+  --ifm-color-error: #ffa0a0;
+  --ifm-color-info-contrast-background: #d3d2fd !important;
+  --ifm-color-warning-contrast-background: #ffe7ac !important;
+  --ifm-color-danger-contrast-background: #fcbfbd !important;
+  --ifm-color-success-contrast-background: #b7edce !important;
+  --ifm-color-success: #b7edce !important;
+  --ifm-color-error: #fcbfbd !important;
+  --rally-color-primary: #ebe7df;
+  --rally-color-background-inverted: #2d2d2b;
+  --rally-text-color: #2d2d2b;
+  --rally-bg-soft: #f8f8f8;
+  --rally-bg-soft-inverted: #2d2d2b;
+  --ifm-font-family-base: "Inter";
+  --ifm-heading-color: "#2d2d2b";
+  font-size: 16px;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme="dark"] {
+  --ifm-color-primary: #da95cf;
+  --ifm-color-success: #033719;
+  --ifm-color-error: #3c0301;
+  --ifm-color-info-contrast-background: #03015c !important;
+  --ifm-color-warning-contrast-background: #3b2a00 !important;
+  --ifm-color-danger-contrast-background: #3c0301 !important;
+  --ifm-color-success-contrast-background: #033719 !important;
+  --ifm-color-success: #033719 !important;
+  --ifm-color-error: #3c0301 !important;
+  --rally-color-primary: #2d2d2b;
+  --rally-color-background-inverted: #ebe7df;
+  --rally-text-color: #ebe7df;
+  --rally-bg-soft-inverted: #f8f8f8;
+  --rally-bg-soft: #1f1f1f;
+}
+
+/*Styling searchbar*/
+
+.navbar__search-input {
+  /* Your styles here */
+  background: var(--ifm-navbar-search-input-background-color);
+  padding: 0 0.5rem 0 1rem;
+}
+
+/*Slack icon in navbar*/
+
+.header-slack-link:hover {
+  opacity: 0.6;
+}
+
+.header-slack-link::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: flex;
+  color: var(--ifm-navbar-link-color);
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath d='M94.12 315.1c0 25.9-21.16 47.06-47.06 47.06S0 341 0 315.1c0-25.9 21.16-47.06 47.06-47.06h47.06v47.06zm23.72 0c0-25.9 21.16-47.06 47.06-47.06s47.06 21.16 47.06 47.06v117.84c0 25.9-21.16 47.06-47.06 47.06s-47.06-21.16-47.06-47.06V315.1zm47.06-188.98c-25.9 0-47.06-21.16-47.06-47.06S139 32 164.9 32s47.06 21.16 47.06 47.06v47.06H164.9zm0 23.72c25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06H47.06C21.16 243.96 0 222.8 0 196.9s21.16-47.06 47.06-47.06H164.9zm188.98 47.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06h-47.06V196.9zm-23.72 0c0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06V79.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06V196.9zM283.1 385.88c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06v-47.06h47.06zm0-23.72c-25.9 0-47.06-21.16-47.06-47.06 0-25.9 21.16-47.06 47.06-47.06h117.84c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06H283.1z'%3E%3C/path%3E%3C/svg%3E")
+    no-repeat center center;
+  background-size: contain;
+}
+
+html[data-theme="dark"] .header-slack-link::before {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath fill='%23fff' d='M94.12 315.1c0 25.9-21.16 47.06-47.06 47.06S0 341 0 315.1c0-25.9 21.16-47.06 47.06-47.06h47.06v47.06zm23.72 0c0-25.9 21.16-47.06 47.06-47.06s47.06 21.16 47.06 47.06v117.84c0 25.9-21.16 47.06-47.06 47.06s-47.06-21.16-47.06-47.06V315.1zm47.06-188.98c-25.9 0-47.06-21.16-47.06-47.06S139 32 164.9 32s47.06 21.16 47.06 47.06v47.06H164.9zm0 23.72c25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06H47.06C21.16 243.96 0 222.8 0 196.9s21.16-47.06 47.06-47.06H164.9zm188.98 47.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06h-47.06V196.9zm-23.72 0c0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06V79.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06V196.9zM283.1 385.88c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06v-47.06h47.06zm0-23.72c-25.9 0-47.06-21.16-47.06-47.06 0-25.9 21.16-47.06 47.06-47.06h117.84c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06H283.1z'%3E%3C/path%3E%3C/svg%3E")
+    no-repeat center center;
+  background-size: contain;
+}
+
+/*Change chevron for sidebar and navbar to custom*/
+
+.navbar__item {
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+}
+.dropdown > .navbar__link {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown > .navbar__link:after {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='size-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='m19.5 8.25-7.5 7.5-7.5-7.5'/%3E%3C/svg%3E")
+    no-repeat center center;
+  border: none;
+  filter: var(--ifm-menu-link-sublist-icon-filter);
+  height: 1.2rem;
+  width: 1.2rem;
+  transform: translateY(-8%);
+}
+
+.menu__caret:before {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='size-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='m8.25 4.5 7.5 7.5-7.5 7.5'/%3E%3C/svg%3E")
+    no-repeat center center;
+  transform: rotate(90deg);
+}
+
+.menu__list-item--collapsed .menu__caret:before {
+  transform: rotateZ(0deg);
+}
+
+.menu__link--sublist-caret:after {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='size-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='m8.25 4.5 7.5 7.5-7.5 7.5'/%3E%3C/svg%3E")
+    no-repeat center center;
+  transform: rotate(90deg);
+}
+
+.menu__list-item--collapsed .menu__link--sublist:after,
+.menu__list-item--collapsed .menu__caret:before {
+  transform: rotateZ(0deg);
+}
+
+.navbar {
+  box-shadow: none !important;
+  font-weight: 500 !important;
+  border-bottom: 1px solid var(--ifm-toc-border-color);
+}
+
+.menu {
+  padding-right: 0.5rem !important;
+}
+
+.menu__link {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+/*remove pagination*/
+.pagination-nav {
+  display: none;
+}
+
+/*Add line to the menu item in sidebar*/
+
+.menu__list .menu__list {
+  border-bottom: 2px solid var(--ifm-color-emphasis-200);
+  border-bottom-color: transparent !important;
+  border-left: 2px solid var(--ifm-color-emphasis-200);
+  /* border-radius: 0 0 0 20px; */
+}
+
+.menu__list .menu__list {
+  margin-left: var(--ifm-menu-link-padding-horizontal);
+}
+
+@media (min-width: 997px) {
+  .docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
+    max-width: 75% !important;
+    padding-top: 2rem;
+  }
+}
+
+/*Style alert close to Rally style*/
+
+.alert {
+  border-left-width: 0px !important;
+}
+
+.admonitionHeading_node_modules-\@docusaurus-theme-classic-lib-theme-Admonition-Layout-styles-module {
+  text-transform: capitalize !important;
+}
+
+.navbar__logo img {
+  max-width: 90% !important;
+}
