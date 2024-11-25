@@ -31,41 +31,45 @@ h6 {
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #872878;
+  --ifm-color-primary: #01a0d7;
   --ifm-color-success: #3cad6e;
   --ifm-color-error: #ffa0a0;
+  --ifm-background-color: #ffffff !important;
   --ifm-color-info-contrast-background: #d3d2fd !important;
   --ifm-color-warning-contrast-background: #ffe7ac !important;
   --ifm-color-danger-contrast-background: #fcbfbd !important;
   --ifm-color-success-contrast-background: #b7edce !important;
   --ifm-color-success: #b7edce !important;
   --ifm-color-error: #fcbfbd !important;
+  --ifm-font-family-base: "Inter" !important;
+  --ifm-heading-color: #000000 !important;
+  --ifm-toc-border-color: #000000 !important;
   --rally-color-primary: #ebe7df;
-  --rally-color-background-inverted: #2d2d2b;
-  --rally-text-color: #2d2d2b;
+  --rally-color-background-inverted: #000000;
+  --rally-text-color: #000000;
   --rally-bg-soft: #f8f8f8;
-  --rally-bg-soft-inverted: #2d2d2b;
-  --ifm-font-family-base: "Inter";
-  --ifm-heading-color: "#2d2d2b";
+  --rally-bg-soft-inverted: #000000;
   font-size: 16px;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"] {
-  --ifm-color-primary: #da95cf;
+  --ifm-color-primary: #01a0d7;
   --ifm-color-success: #033719;
   --ifm-color-error: #3c0301;
+  --ifm-background-color: #000000 !important;
+  --ifm-toc-border-color: #ffffff !important;
   --ifm-color-info-contrast-background: #03015c !important;
   --ifm-color-warning-contrast-background: #3b2a00 !important;
   --ifm-color-danger-contrast-background: #3c0301 !important;
   --ifm-color-success-contrast-background: #033719 !important;
   --ifm-color-success: #033719 !important;
   --ifm-color-error: #3c0301 !important;
-  --rally-color-primary: #2d2d2b;
+  --rally-color-primary: #000000;
   --rally-color-background-inverted: #ebe7df;
   --rally-text-color: #ebe7df;
   --rally-bg-soft-inverted: #f8f8f8;
-  --rally-bg-soft: #1f1f1f;
+  --rally-bg-soft: #000000;
 }
 
 /*Styling searchbar*/
@@ -146,6 +150,7 @@ html[data-theme="dark"] .header-slack-link::before {
   box-shadow: none !important;
   font-weight: 500 !important;
   border-bottom: 1px solid var(--ifm-toc-border-color);
+  background-color: var(--ifm-background-color);
 }
 
 .menu {
