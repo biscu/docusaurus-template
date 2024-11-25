@@ -115,7 +115,7 @@ const config = {
             label: "App",
           },
           { to: "/blog", label: "Blog", position: "left" },
-          { to: "/roadmap", label: "Custom", position: "left" },
+          { to: "/custom", label: "Custom", position: "left" },
           {
             href: "https://app.slack.com/client/E023JT6R62Z/C04PPSNN78W",
             position: "right",
