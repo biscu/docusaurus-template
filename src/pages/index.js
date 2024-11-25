@@ -16,7 +16,7 @@ export default function Home() {
       description="Description will go into a meta tag in <head />"
     >
       <div className="text-3xl flex justify-center items-center h-screen w-screen">
-        <motion.h1 initial={{ opacity: 0 }} animate={{ y: -50, opacity: 1 }}>
+        <motion.h1 initial={{ opacity: 0 }} animate={{ y: -20, opacity: 1 }}>
           Homepage
         </motion.h1>
       </div>
