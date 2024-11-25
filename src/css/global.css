@@ -59,6 +59,7 @@ h6 {
   --ifm-color-error: #3c0301;
   --ifm-background-color: #000000 !important;
   --ifm-toc-border-color: #ffffff !important;
+  --ifm-heading-color: #ffffff !important;
   --ifm-color-info-contrast-background: #03015c !important;
   --ifm-color-warning-contrast-background: #3b2a00 !important;
   --ifm-color-danger-contrast-background: #3c0301 !important;

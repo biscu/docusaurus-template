@@ -25,6 +25,7 @@
     "clsx": "^2.0.0",
     "css-minimizer-webpack-plugin": "^4.1.0",
     "gsap": "^3.12.5",
+    "motion": "^11.11.17",
     "prism-react-renderer": "^2.3.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
