@@ -68,6 +68,10 @@ const config = {
         },
         blog: {
           showReadingTime: true,
+          blogTitle: "Blog title",
+          blogDescription: "Blog",
+          blogListComponent: "@theme/BlogListPage",
+          blogPostComponent: "@theme/BlogPostPage",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
         },

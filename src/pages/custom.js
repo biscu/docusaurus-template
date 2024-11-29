@@ -20,7 +20,7 @@ export default function Home() {
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
-      <div className="text-3xl flex justify-center items-center h-screen w-screen">
+      <div className="flex justify-center items-center w-screen h-screen text-3xl">
         Other Custom Page
       </div>
     </Layout>
