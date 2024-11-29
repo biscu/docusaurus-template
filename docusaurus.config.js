@@ -48,6 +48,7 @@ const config = {
         searchBarShortcut: false,
         searchBarShortcutHint: false,
         searchContextByPaths: ["/app"],
+        searchBarPosition: "left",
         //hideSearchBarWithNoSearchContext: true,
         // ... other options
       },
@@ -104,8 +105,8 @@ const config = {
         title: "",
         logo: {
           alt: "My Site Logo",
-          src: "img/rally-logo-light.svg",
-          srcDark: "img/rally-logo-dark.svg",
+          src: "img/logo-placeholder-light.svg",
+          srcDark: "img/logo-placeholder-dark.svg",
         },
         items: [
           {
@@ -117,10 +118,8 @@ const config = {
           { to: "/blog", label: "Blog", position: "left" },
           { to: "/custom", label: "Custom", position: "left" },
           {
-            href: "https://app.slack.com/client/E023JT6R62Z/C04PPSNN78W",
+            type: "search",
             position: "right",
-            className: "header-slack-link",
-            "aria-label": "Slack channel",
           },
         ],
       },
