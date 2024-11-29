@@ -15,8 +15,8 @@ export default function Home() {
       title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
-      <div className="text-3xl flex justify-center items-center h-screen w-screen">
-        <motion.h1 initial={{ opacity: 0 }} animate={{ y: -20, opacity: 1 }}>
+      <div className="flex items-center justify-center w-screen h-screen text-3xl">
+        <motion.h1 initial={{ opacity: 0 }} animate={{ y: -30, opacity: 1 }}>
           Homepage
         </motion.h1>
       </div>
