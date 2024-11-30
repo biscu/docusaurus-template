@@ -169,21 +169,10 @@ p {
   margin-left: var(--ifm-menu-link-padding-horizontal);
 }
 
-@media (min-width: 997px) {
-  .docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
-    max-width: 75% !important;
-    padding-top: 2rem;
-  }
-}
-
 /*Style alert close to Rally style*/
 
 .alert {
   border-left-width: 0px !important;
-}
-
-.admonitionHeading_node_modules-\@docusaurus-theme-classic-lib-theme-Admonition-Layout-styles-module {
-  text-transform: capitalize !important;
 }
 
 /*Style Logo*/
@@ -192,12 +181,12 @@ p {
 }
 
 /*Style main wrapper of the docs*/
-.docRoot_node_modules-\@docusaurus-theme-classic-lib-theme-DocRoot-Layout-styles-module {
+.docRoot {
   max-width: 1400px;
   margin: 0 auto;
 }
 
-.docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
+.docItemCol {
   padding-left: 48px;
   padding-right: 48px;
 }
