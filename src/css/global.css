@@ -33,7 +33,7 @@ p {
 
 /* You can override the default Infima variables here. */
 :root {
-  font-family: "PostnordRegular";
+  --ifm-font-family-base: "PostnordRegular"
   /* Accent */
   --ifm-color-primary: #01a0d7;
   /* Global Background color*/
