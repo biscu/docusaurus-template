@@ -7,7 +7,7 @@
 @font-face {
   font-family: "PostnordRegular";
   src: local("PostnordRegular"),
-    url("/static/font/postnordsans-regular.woff2") format("woff2");
+    url("/font/postnordsans-regular.woff2") format("woff2");
 }
 
 html {
@@ -32,6 +32,7 @@ p {
 
 /* You can override the default Infima variables here. */
 :root {
+  font-family: "PostnordRegular";
   /* Accent */
   --ifm-color-primary: #01a0d7;
   /* Global Background color*/
