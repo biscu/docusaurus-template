@@ -5,8 +5,8 @@
 /* Your custom CSS here */
 
 @font-face {
-  font-family: "Postnord Regular";
-  src: local("Postnord Regular"),
+  font-family: "PostnordRegular";
+  src: local("PostnordRegular"),
     url("../../static/font/PostnordSans-Regular.woff2") format("woff2");
 }
 
@@ -47,7 +47,7 @@ p {
   --ifm-color-success-contrast-background: #b7edce !important;
   --ifm-color-success: #b7edce !important;
   --ifm-color-error: #fcbfbd !important;
-  --ifm-font-family-base: "Postnord Regular" !important;
+  --ifm-font-family-base: "PostnordRegular" !important;
 
   --rally-color-primary: #ebe7df;
   --rally-color-background-inverted: #000000;
