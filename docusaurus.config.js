@@ -49,6 +49,7 @@ const config = {
         searchBarShortcutHint: false,
         searchContextByPaths: ["/app"],
         searchBarPosition: "right",
+        highlightSearchTermsOnTargetPage: true,
         //hideSearchBarWithNoSearchContext: true,
         // ... other options
       },
