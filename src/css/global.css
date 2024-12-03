@@ -4,20 +4,14 @@
 
 /* Your custom CSS here */
 
-/* @font-face {
-  font-family: "PostnordRegular";
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  src: url("../../static/font/postnordsans-regular.woff2") format("woff2");
-} */
 @font-face {
   font-family: "PostnordRegular";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url("../../static/font/ease.woff2") format("woff2");
+  src: url("../../static/font/postnordsansregular.woff2") format("woff2");
 }
+
 
 html {
   scroll-behavior: smooth;
