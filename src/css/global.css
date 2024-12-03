@@ -93,8 +93,16 @@ p {
 .navbar__search-input {
   /* Your styles here */
   background: var(--ifm-navbar-search-input-background-color);
-  padding: 0 0.5rem 0 1rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px !important;
+  font-size: 1rem;
+  height: auto;
 }
+
+input:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+}
+
 
 /*Change chevron for sidebar and navbar to custom*/
 
@@ -144,6 +152,7 @@ p {
   font-weight: 500 !important;
   border-bottom: 1px solid var(--ifm-toc-border-color);
   background-color: var(--ifm-background-color);
+  height: auto !important;
 }
 
 .menu {
@@ -194,3 +203,5 @@ p {
   padding-left: 48px;
   padding-right: 48px;
 }
+
+
