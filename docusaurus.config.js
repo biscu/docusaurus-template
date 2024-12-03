@@ -8,6 +8,9 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  future: {
+    experimental_faster: true,
+  },
   title: "Rally Documentation Demo",
   staticDirectories: ["static"],
   tagline: "Dinosaurs are cool",
@@ -72,6 +75,7 @@ const config = {
           blogDescription: "Blog",
           blogListComponent: "@theme/BlogListPage",
           blogPostComponent: "@theme/BlogPostPage",
+          truncateMarker: /<!--\s*(truncate)\s*-->/,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
         },

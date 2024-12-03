@@ -15,8 +15,10 @@ Buttons let people take action and make choices with one tap.
 <Tabs >
   <TabItem value="apple" label="Easypark" default>
   <ThemedImage
-alt="Docusaurus themed image"
-sources={{ light: useBaseUrl('/img/ep-button-light.svg'), dark: useBaseUrl('/img/ep-button-dark.svg')}}/>
+      alt="Docusaurus themed image"
+      sources={{ 
+        light: useBaseUrl('/img/ep-button-light.svg'), 
+        dark: useBaseUrl('/img/ep-button-dark.svg')}}/>
   </TabItem>
   <TabItem value="orange" label="ParkMobile">
   <ThemedImage
