@@ -8,9 +8,9 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Rally Documentation Demo",
+  title: "Docusauru Template",
   staticDirectories: ["static"],
-  tagline: "Dinosaurs are cool",
+  tagline: "Template",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -21,8 +21,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "Easypark Group", // Usually your GitHub org/user name.
-  projectName: "Rally", // Usually your repo name.
+  organizationName: "Company", // Usually your GitHub org/user name.
+  projectName: "Template", // Usually your repo name.
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -48,7 +48,7 @@ const config = {
         searchBarShortcut: false,
         searchBarShortcutHint: false,
         searchContextByPaths: ["/app"],
-        searchBarPosition: "left",
+        searchBarPosition: "right",
         //hideSearchBarWithNoSearchContext: true,
         // ... other options
       },
