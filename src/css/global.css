@@ -104,8 +104,8 @@ input:focus-visible {
 }
 
 mark { 
-  background-color: green; 
-  color: white; 
+  background-color: var(--ifm-color-primary); 
+  color: var(--ifm-heading-color);
   }
 
 
