@@ -8,9 +8,6 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  future: {
-    experimental_faster: true,
-  },
   title: "Rally Documentation Demo",
   staticDirectories: ["static"],
   tagline: "Dinosaurs are cool",
