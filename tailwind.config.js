@@ -4,6 +4,7 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx,md,mdx}",
     "./docs/**/*.{js,jsx,ts,tsx,md,mdx}",
     "./blog/**/*.{js,jsx,ts,tsx,md,mdx}",
+    "./app/**/*.{js,jsx,ts,tsx,md,mdx}",
   ],
   theme: {
     extend: {},

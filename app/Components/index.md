@@ -2,9 +2,14 @@
 
 import Overview from '@site/src/components/Overview'
 
-<div className="flex flex-row gap-6 flex-wrap">
+<div className="grid grid-cols-2 gap-4">
 
 <Overview component="button" coverLight="/img/placeholder_cover.svg" coverDark="/img/placeholder_cover.svg" />
+<Overview component="tab" coverLight="/img/placeholder_cover.svg" coverDark="/img/placeholder_cover.svg" />
+<Overview component="tab" coverLight="/img/placeholder_cover.svg" coverDark="/img/placeholder_cover.svg" />
+<Overview component="tab" coverLight="/img/placeholder_cover.svg" coverDark="/img/placeholder_cover.svg" />
+<Overview component="tab" coverLight="/img/placeholder_cover.svg" coverDark="/img/placeholder_cover.svg" />
+<Overview component="tab" coverLight="/img/placeholder_cover.svg" coverDark="/img/placeholder_cover.svg" />
 <Overview component="tab" coverLight="/img/placeholder_cover.svg" coverDark="/img/placeholder_cover.svg" />
 
 </div>

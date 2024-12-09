@@ -14,7 +14,7 @@ const Overview = ({ component, coverLight, coverDark }) => {
             dark: useBaseUrl(coverDark),
           }}
         />
-        <h2>{component}</h2>
+        <h2 className="capitalize">{component}</h2>
       </div>
     </a>
   );
