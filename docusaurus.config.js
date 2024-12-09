@@ -118,9 +118,9 @@ const config = {
       navbar: {
         title: "",
         logo: {
-          alt: "My Site Logo",
-          src: "img/logo-placeholder-light.svg",
-          srcDark: "img/logo-placeholder-dark.svg",
+          alt: "Postnord Logo",
+          src: "img/postnord_logo_light.svg",
+          srcDark: "img/postnord_logo_dark.svg",
         },
         items: [
           {

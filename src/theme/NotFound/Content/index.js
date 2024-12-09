@@ -13,7 +13,7 @@ export default function ContentWrapper(props) {
         }}
       >
         <img
-          src={require("@site/static/img/tire.png").default}
+          src={require("@site/static/img/postnord_logo_light.svg").default}
           alt="404"
           height="200px"
         />
