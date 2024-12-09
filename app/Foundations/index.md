@@ -1,4 +1,4 @@
-import Overview from '../../src/components/Overview'
+import Overview from '@site/src/components/Overview'
 
 # Foundations
 

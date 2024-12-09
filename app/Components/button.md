@@ -2,7 +2,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import ThemedImage from '@theme/ThemedImage';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-import Links from '../../src/components/links/links'
+import Links from '@site/src/components/links/links'
 
 # Button
 

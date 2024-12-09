@@ -3,7 +3,6 @@ import Layout from "@theme/Layout";
 import Heading from "@theme/Heading";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import ThemedImage from "@theme/ThemedImage";
-import Overview from "../components/Overview";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -23,11 +22,6 @@ export default function Home() {
     >
       <div className="flex items-center justify-center w-screen h-screen text-3xl">
         Other Custom Page
-        <Overview
-          component="button"
-          coverLight="/img/placeholder_cover.svg"
-          coverDark="/img/placeholder_cover.svg"
-        />
       </div>
     </Layout>
   );

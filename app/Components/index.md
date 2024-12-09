@@ -1,6 +1,6 @@
 # Components
 
-import Overview from '../../src/components/Overview'
+import Overview from '@site/src/components/Overview'
 
 <div className="flex flex-row gap-6 flex-wrap">
 
