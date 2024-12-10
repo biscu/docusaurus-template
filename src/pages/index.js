@@ -9,9 +9,13 @@ export default function Home() {
       title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
-      <div className="flex justify-center items-center w-screen h-screen text-3xl">
-        <motion.h1 initial={{ opacity: 0 }} animate={{ y: -30, opacity: 1 }}>
-          Homepage
+      <div className="flex items-center justify-center w-[700px] h-screen mx-auto text-center text-balance	">
+        <motion.h1
+          initial={{ opacity: 0 }}
+          animate={{ y: -30, opacity: 1 }}
+          className="text-6xl"
+        >
+          Postnord app source of truth
         </motion.h1>
       </div>
     </Layout>

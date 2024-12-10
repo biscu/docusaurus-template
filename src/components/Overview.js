@@ -1,10 +1,11 @@
 import ThemedImage from "@theme/ThemedImage";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import React from "react";
+import Link from "@docusaurus/Link";
 
 const Overview = ({ component, coverLight, coverDark }) => {
   return (
-    <a href={`${component}`} className="no-underline">
+    <Link to={`${component}`} className="no-underline">
       <div className="flex flex-col gap-3">
         <ThemedImage
           alt="Docusaurus themed image"
@@ -16,7 +17,7 @@ const Overview = ({ component, coverLight, coverDark }) => {
         />
         <h2 className="capitalize">{component}</h2>
       </div>
-    </a>
+    </Link>
   );
 };
 
