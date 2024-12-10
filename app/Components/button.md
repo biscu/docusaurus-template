@@ -16,5 +16,5 @@ Buttons let people take action and make choices with one tap.
 <ThemedImage
 alt="Docusaurus themed image"
 sources={{
-    light: useBaseUrl('/img/ep-button-light.svg'),
-    dark: useBaseUrl('/img/ep-button-dark.svg')}}/>
+    light: useBaseUrl('/img/placeholder_cover.svg'),
+    dark: useBaseUrl('/img/placeholder_cover.svg')}}/>

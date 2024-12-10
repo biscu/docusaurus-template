@@ -2,11 +2,11 @@
 sidebar_position: 1
 ---
 
-# Rally App
+# Intro
 
-Use Rally Design system to create consistent, intuitive and well crafted experiences.
+The team, strategy and mission.
 
-## What is a design system?
+## Our mission
 
 Imagine you're building a big castle out of colourful building blocks. Each block has its own shape, size, and color. Now, think about making sure all the parts of your castle look and fit together nicely. That's where a design system comes in!
 
