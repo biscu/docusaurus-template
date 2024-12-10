@@ -21,7 +21,6 @@
     "@easyops-cn/docusaurus-search-local": "^0.44.5",
     "@gsap/react": "^2.1.1",
     "@mdx-js/react": "^3.0.0",
-    "@splinetool/react-spline": "^2.2.6",
     "clsx": "^2.0.0",
     "css-minimizer-webpack-plugin": "^4.1.0",
     "motion": "^11.11.17",
