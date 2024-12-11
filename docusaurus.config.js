@@ -107,8 +107,8 @@ const config = {
       //   id: "support_us",
       //   content:
       //     'This is a banner example to prompt for specific occasions <a target="_blank" rel="noopener noreferrer" href="#">Can also support links</a>',
-      //   backgroundColor: "var(--rally-color-background-inverted)",
-      //   textColor: "var(--rally-color-primary)",
+      //   backgroundColor: "var(--ifm-background-color-inverted)",
+      //   textColor: "var(--ifm-heading-color-inverted)",
       //   isCloseable: false,
       // },
       colorMode: {

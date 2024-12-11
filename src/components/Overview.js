@@ -9,7 +9,7 @@ const Overview = ({ component, coverLight, coverDark }) => {
       <div className="flex flex-col gap-3">
         <ThemedImage
           alt="Docusaurus themed image"
-          className="rounded-2xl"
+          className="rounded-xl"
           sources={{
             light: useBaseUrl(coverLight),
             dark: useBaseUrl(coverDark),
