@@ -1,15 +1,13 @@
 ---
-sidebar_position: 5
+sidebar_position: 2
 ---
 
 import ThemedImage from '@theme/ThemedImage';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import MotionTokens from '@site/src/components/Tokens/MotionTokens';
+import TypographyTokens from '@site/src/components/Tokens/TypographyTokens';
 
-# Motion
+# Typography
 
 Here we list all the base, semantic token.
 
-<MotionTokens />
-
-## Sub
+<TypographyTokens/>
