@@ -3,6 +3,8 @@ import Layout from "@theme/Layout";
 import Heading from "@theme/Heading";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import ThemedImage from "@theme/ThemedImage";
+import ColorContrast from "../components/ColorContrast/ColorContrast";
+import { color } from '../../node_modules/estree-util-visit/lib/color.default';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -20,8 +22,8 @@ export default function Home() {
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
-      <div className="flex items-center justify-center w-screen h-screen text-3xl">
-        Custom page
+      <div className="flex justify-center items-center w-screen h-screen text-3xl">
+  Custom
       </div>
     </Layout>
   );
