@@ -14,6 +14,7 @@ const Overview = ({ component, coverLight, coverDark }) => {
             light: useBaseUrl(coverLight),
             dark: useBaseUrl(coverDark),
           }}
+          style={{ minHeight: "100px" }}
         />
         <h2 className="capitalize">{component}</h2>
       </div>
