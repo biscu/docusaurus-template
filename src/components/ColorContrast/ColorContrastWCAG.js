@@ -20,7 +20,7 @@ const ColorContrastWCAG = ({ colorText = '#000000', colorBg = '#FFFFFF', token1,
             {/* <input type="color" value={textColor} onChange={(e) => setTextColor(e.target.value)} />
             <input type="color" value={bgColor} onChange={(e) => setBgColor(e.target.value)} /> */}
             <div className="p-4" style={{ backgroundColor: colorBg }}>
-            <h2 style={{ color: colorText }}>{contrastValue}</h2>
+            <h2 style={{ color: colorText }}>{contrastValue}:1</h2>
                 <span style={{ color: colorText }}>{token1}/{token2}</span>
             </div>
         </div>

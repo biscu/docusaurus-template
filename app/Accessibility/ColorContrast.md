@@ -30,8 +30,10 @@ Condition to meet AAA compliant with APCA:
 
 <TabItem value="WCAG 2.0" label="WCAG 2.0">
 
-    WCAG 2.0 is a standard for ensuring accessibility in web content, including text contrast, navigation, and accessibility features.
-    <ColorContrastOverviewWCAG />
+## WCAG 2.0
+
+WCAG 2.0 is a standard for ensuring accessibility in web content, including text contrast, navigation, and accessibility features.
+<ColorContrastOverviewWCAG />
 
 </TabItem>
 </Tabs>
