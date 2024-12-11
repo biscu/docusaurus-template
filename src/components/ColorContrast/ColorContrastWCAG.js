@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import colorContrast from 'color-contrast'
+import { color } from 'motion/react';
 
 // Updated ColorContrast to accept colorText and colorBg as props
 const ColorContrastWCAG = ({ colorText = '#000000', colorBg = '#FFFFFF', token1, token2 }) => {
@@ -19,8 +20,8 @@ const ColorContrastWCAG = ({ colorText = '#000000', colorBg = '#FFFFFF', token1,
             {/* <input type="color" value={textColor} onChange={(e) => setTextColor(e.target.value)} />
             <input type="color" value={bgColor} onChange={(e) => setBgColor(e.target.value)} /> */}
             <div className="p-4" style={{ backgroundColor: colorBg }}>
-            <h2 style={{ color: textColor }}>{contrastValue}</h2>
-                <span style={{ color: textColor }}>{token1}/{token2}</span>
+            <h2 style={{ color: colorText }}>{contrastValue}</h2>
+                <span style={{ color: colorText }}>{token1}/{token2}</span>
             </div>
         </div>
         </>
