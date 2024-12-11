@@ -14,7 +14,7 @@ const config = {
   title: "Docusauru Template",
   staticDirectories: ["static"],
   tagline: "Template",
-  favicon: "img/favicon.ico",
+  favicon: "img/favicon.svg",
 
   // Set the production url of your site here
   url: "https://your-docusaurus-site.example.com",
