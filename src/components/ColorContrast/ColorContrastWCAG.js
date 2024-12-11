@@ -3,8 +3,8 @@ import colorContrast from 'color-contrast'
 
 // Updated ColorContrast to accept colorText and colorBg as props
 const ColorContrastWCAG = ({ colorText = '#000000', colorBg = '#FFFFFF', token1, token2 }) => {
-    const [textColor, setTextColor] = useState(colorText);
-    const [bgColor, setBgColor] = useState(colorBg);
+    // const [textColor, setTextColor] = useState(colorText);
+    // const [bgColor, setBgColor] = useState(colorBg);
 
     const calculateContrast = (colorText, colorBg) => {
         const contrastValue = colorContrast(colorText, colorBg);
