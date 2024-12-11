@@ -7,7 +7,7 @@ import TabItem from '@theme/TabItem';
 import ColorContrastOverview from '@site/src/components/ColorContrast/ColorContrastOverview';
 import ColorContrastOverviewWCAG from '@site/src/components/ColorContrast/ColorContrastOverviewWCAG';
 
-# Color contrast
+# Color Contrast
 
 Color contrast in digital products is crucial because it ensures readability, accessibility, and usability by making content legible for all users, including those with visual impairments or in different lighting conditions.
 
