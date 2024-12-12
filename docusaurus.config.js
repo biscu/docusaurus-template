@@ -117,7 +117,7 @@ const config = {
         respectPrefersColorScheme: false,
       },
       // Replace with your project's social card
-      image: "img/og_image.jpg",
+      image: "./img/og_image.jpg",
       navbar: {
         title: "",
         logo: {
