@@ -103,6 +103,7 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
+      image: "img/og_image.jpg",
       // announcementBar: {
       //   id: "support_us",
       //   content:
