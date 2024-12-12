@@ -103,7 +103,6 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
-      image: "img/og_image.jpg",
       // announcementBar: {
       //   id: "support_us",
       //   content:
@@ -118,7 +117,7 @@ const config = {
         respectPrefersColorScheme: false,
       },
       // Replace with your project's social card
-      image: "img/docusaurus-social-card.jpg",
+      image: "img/og_image.jpg",
       navbar: {
         title: "",
         logo: {
