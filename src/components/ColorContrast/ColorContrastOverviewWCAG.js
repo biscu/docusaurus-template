@@ -18,8 +18,8 @@ const ColorContrastOverviewWCAG = () => {
                 <>
                     <ColorContrastWCAG colorText = '#FFFFFF' colorBg = '#000000' token1="onSurface" token2="surface"/>
                     <ColorContrastWCAG colorText = '#FFFFFF' colorBg = '#666666' token1="onPrimary" token2="primary"/>
-                    <ColorContrastWCAG colorText = '#0077B6' colorBg = '#E6F3F8' token1="primary" token2="surface"/>
-                    <ColorContrastWCAG colorText = '#555555' colorBg = '#FAFAFA' token1="onSurfaceVariant" token2="surface"/>
+                    <ColorContrastWCAG colorText = '#0077B6' colorBg = '#FFFFFF' token1="primary" token2="surface"/>
+                    <ColorContrastWCAG colorText = '#555555' colorBg = '#FFFFFF' token1="onSurfaceVariant" token2="surface"/>
                 </>
             )}
         </div>

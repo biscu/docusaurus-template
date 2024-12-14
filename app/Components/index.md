@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Components
 
 import Overview from '@site/src/components/Overview'
