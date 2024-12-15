@@ -40,7 +40,7 @@ const IconTokens = () => {
           placeholder="Search icons..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className="text-[var(--ifm-heading-color)] text-lg p-4 bg-gray-100 rounded border-none focus:outline-none dark:bg-slate-900 focus:ring focus:ring-[var(--ifm-color-primary)]"
+          className="text-[var(--ifm-heading-color)] text-lg p-4 rounded border-none focus:outline-none bg-[var(--ifm-background-color-subtle)] focus:ring focus:ring-[var(--ifm-color-primary)]"
         />
         {filteredIcons.length === 0 && 
         <div className="flex flex-col gap-3 justify-center items-center h-96">
@@ -52,7 +52,7 @@ const IconTokens = () => {
           <div className="flex flex-row gap-3">
             {filteredIcons.map(icon => (
               <div key={icon.id} className="flex flex-col gap-2 items-center">
-                <div className="flex justify-center items-center p-6 bg-gray-100 rounded dark:bg-slate-900">
+                <div className="flex justify-center items-center p-6 rounded bg-[var(--ifm-background-color-subtle)]">
                     <IconItem name={icon.name} />
                 </div>
                 <p>{icon.name}</p>

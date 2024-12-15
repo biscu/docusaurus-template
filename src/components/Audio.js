@@ -2,7 +2,7 @@ import Howler from "react-howler";
 import { useState } from "react";
 import { Play, Pause } from "lucide-react"; 
 
-const Audio = () => {
+const Audio = ({src}) => {
     const [playing, setPlaying] = useState(false);
     const [howlerRef, setHowlerRef] = useState(null); 
   
@@ -20,9 +20,9 @@ const Audio = () => {
     };
 
   return (
-    <div className="flex justify-start items-center p-4 rounded-full bg-neutral-900">
+    <div className="flex justify-start items-center p-4 rounded-full bg-[var(--ifm-background-color-subtle)]">
       <Howler
-        src="/audio/voice-over-button.m4a"
+        src={src}
         playing={playing}
         onEnd={handleEnd} 
         ref={(ref) => setHowlerRef(ref)} 
