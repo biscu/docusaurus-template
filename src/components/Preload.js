@@ -1,6 +1,8 @@
 import React from "react";
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
+// Add all the images you want to preload here
+
 const Preload = () => {
     return (
         <div className="hidden">

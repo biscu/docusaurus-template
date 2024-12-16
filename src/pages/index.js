@@ -44,7 +44,7 @@ export default function Home() {
           animate={{ y: 0, opacity: 1 }}
           className="text-6xl"
         >
-          Postnord app source of truth
+          The Postnord app handbook
         </motion.h1>
         <motion.p
           initial={{ y: 30, opacity: 0 }}
