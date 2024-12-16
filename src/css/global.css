@@ -43,10 +43,9 @@ a {
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-font-family-base: "PostnordRegular"
   
   /* Accent */
-  --ifm-color-primary: #01a0d7;
+  --ifm-color-primary: #005D92 !important;
   
   /* Global Background color*/
   --ifm-background-color: #fdfeff !important;
@@ -77,7 +76,8 @@ a {
 [data-theme="dark"] {
   
   /* Accent */
-  --ifm-color-primary: #01a0d7;
+  --ifm-color-primary: #32B6E2 !important;
+  
   
   /* Global Background color*/
   --ifm-background-color: #101010 !important;
@@ -101,6 +101,7 @@ a {
   --ifm-color-success-contrast-background: #033719 !important;
   --ifm-color-success: #033719 !important;
   --ifm-color-error: #3c0301 !important;
+  --ifm-font-family-base: "PostnordRegular" !important;
 
   --ifm-caret-color-hover: color-mix(in oklab, var(--ifm-menu-color-background-hover) 95%, white) !important;
 }
@@ -121,6 +122,18 @@ a {
 }
 
 /*Styling searchbar*/
+
+@media only screen and (max-width: 768px) {
+.navbar__search {
+  display: none;
+}
+.navbar__item{
+  display: none !important;
+}
+.navbar__brand {
+  align-self: center !important;
+}
+}
 
 .navbar__search-input {
   /* Your styles here */
@@ -227,7 +240,10 @@ mark {
 
 /*Style Logo*/
 .navbar__logo img {
-  max-width: 70% !important;
+  max-width: 100% !important;
+}
+.navbar__logo{
+  width: 120px;
 }
 
 .navbar__brand {
