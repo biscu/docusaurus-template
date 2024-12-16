@@ -42,7 +42,7 @@ export default function Home() {
         <motion.h1
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          className="text-6xl"
+          className="text-6xl home-title"
         >
           The Postnord app handbook
         </motion.h1>
@@ -54,6 +54,7 @@ export default function Home() {
         >
         The one place of information for design, usability, accessibility and strategy.
         </motion.p>
+       
       </div>
     </Layout>
   );

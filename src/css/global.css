@@ -106,6 +106,15 @@ a {
 }
 
 
+.home-title {
+  background: #C8C8C8;
+  background: linear-gradient(to top, #C8C8C8 0%, #ECECEC 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+
 /*Styling sidebar chevron hover*/
 .menu__link:hover, .menu__caret:hover {
   background: var(--ifm-caret-color-hover) !important;
