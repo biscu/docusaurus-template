@@ -69,6 +69,8 @@ a {
   --ifm-color-success: #b7edce !important;
   --ifm-color-error: #fcbfbd !important;
   --ifm-font-family-base: "PostnordRegular" !important;
+
+  --ifm-caret-color-hover: color-mix(in oklab, var(--ifm-menu-color-background-hover) 97%, black) !important;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -99,6 +101,14 @@ a {
   --ifm-color-success-contrast-background: #033719 !important;
   --ifm-color-success: #033719 !important;
   --ifm-color-error: #3c0301 !important;
+
+  --ifm-caret-color-hover: color-mix(in oklab, var(--ifm-menu-color-background-hover) 95%, white) !important;
+}
+
+
+/*Styling sidebar chevron hover*/
+.menu__link:hover, .menu__caret:hover {
+  background: var(--ifm-caret-color-hover) !important;
 }
 
 /*Styling searchbar*/
