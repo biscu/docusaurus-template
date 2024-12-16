@@ -5,8 +5,8 @@ import Globe from "@site/static/img/icons/globe.svg";
 
 const icons = [
   { id: 1, name: 'globe', svg: <Globe /> },
-  { id: 2, name: 'cart', svg: <Cart /> },
-  { id: 3, name: 'user', svg: <User /> },
+  // { id: 2, name: 'cart', svg: <Cart /> },
+  // { id: 3, name: 'user', svg: <User /> },
 ];
 
 const IconItem = ({ name, className }) => {
