@@ -1,4 +1,3 @@
-import * as React from "react";
 import { useState } from 'react';
 import Globe from "@site/static/img/icons/globe.svg";
 import User from "@site/static/img/icons/user.svg";
