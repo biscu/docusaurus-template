@@ -1,8 +1,8 @@
 import * as React from "react";
 import { useState } from 'react';
-import Globe from "@site/static/img/icons/globe.svg";
-import User from "@site/static/img/icons/user.svg";
-import Cart from "@site/static/img/icons/cart.svg";
+import Globe from "@site/static/img/icons/Globe.svg";
+import User from "@site/static/img/icons/User.svg";
+import Cart from "@site/static/img/icons/Cart.svg";
 
 const icons = [
   { id: 1, name: 'globe', svg: <Globe /> },
