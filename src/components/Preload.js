@@ -10,6 +10,7 @@ const Preload = () => {
             <img src={useBaseUrl("./img/placeholder_cover_light.svg")} alt="preload" />
             <img src={useBaseUrl("./img/header.svg")} alt="preload" />
             <img src={useBaseUrl("./img/header2.svg")} alt="preload" />
+            <img src="https://github.com/biscu.png" alt="preload" />
         </div>
     );
 }

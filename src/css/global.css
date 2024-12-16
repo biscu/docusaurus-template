@@ -241,13 +241,15 @@ mark {
 /*Style Logo*/
 .navbar__logo img {
   max-width: 100% !important;
+  height: 34px !important;
 }
 .navbar__logo{
   width: 120px;
+  align-items: center !important;
 }
 
 .navbar__brand {
- margin-right: 0px !important; 
+ margin-right: 16px !important; 
 }
 
 /*Style main wrapper of the docs*/
