@@ -9,7 +9,7 @@ const icons = [
 ];
 
 const IllustrationItem = ({ name, className }) => {
-    const selectedPath = icons.find(icon => icon.name === name).svg;
+    const selectedPath = icons.find(illustration => illustration.name === name).svg;
     return (
       <>
         {selectedPath}
