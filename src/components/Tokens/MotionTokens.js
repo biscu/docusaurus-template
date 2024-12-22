@@ -1,122 +1,135 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
+import { Play } from 'lucide-react';
 
-const AnimatedBox = ({ duration, easing, isPlaying }) => (
-  <div className="overflow-hidden relative w-[400px] h-16 bg-gray-100 rounded-lg">
-    <div 
-      className={`h-full w-16 bg-blue-500 rounded-lg transform ${isPlaying ? 'translate-x-[300px]' : ''}`}
-      style={{ 
-        transition: `transform ${duration}ms ${easing}`,
-        transitionDelay: '0ms'
-      }}
-    />
-  </div>
-);
+const EASING_OPTIONS = ['linear', 'ease', 'ease-in', 'ease-out', 'ease-in-out'];
+const DURATION_OPTIONS = ['0.5s', '1s', '1.5s', '2s'];
 
-const MotionCard = ({ name, duration, easing, description }) => {
+function AnimationControls({ label, easing, duration, onEasingChange, onDurationChange }) {
+  return (
+    <div className="">
+      <h3 className="">{label}</h3>
+      <div className="flex gap-4">
+        <div className="space-y-2">
+          <label className="block text-sm">Easing</label>
+          <select
+            value={easing}
+            onChange={(e) => onEasingChange(e.target.value)}
+            className="block bg-[var(--ifm-background-color-subtle)] w-full rounded-md border-[var(--ifm-toc-border-color)] p-2"
+          >
+            {EASING_OPTIONS.map((option) => (
+              <option key={option} value={option}>
+                {option}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div className="space-y-2">
+          <label className="block text-sm">Duration</label>
+          <select
+            value={duration}
+            onChange={(e) => onDurationChange(e.target.value)}
+            className="block bg-[var(--ifm-background-color-subtle)] rounded-md w-full border-[var(--ifm-toc-border-color)] p-2"
+          >
+            {DURATION_OPTIONS.map((option) => (
+              <option key={option} value={option}>
+                {option}
+              </option>
+            ))}
+          </select>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Motion() {
   const [isPlaying, setIsPlaying] = useState(false);
+  const [direction, setDirection] = useState('forward');
+  const blockRef = useRef(null);
+
+  const [forwardConfig, setForwardConfig] = useState({
+    easing: 'ease-in-out',
+    duration: '1s'
+  });
+
+  const [backwardConfig, setBackwardConfig] = useState({
+    easing: 'ease-in',
+    duration: '1s'
+  });
+
+  useEffect(() => {
+    const block = blockRef.current;
+    if (!block) return;
+
+    const handleAnimationEnd = () => {
+      setDirection(prev => prev === 'forward' ? 'backward' : 'forward');
+      if (direction === 'backward') {
+        setIsPlaying(false);
+        setDirection('forward');
+      }
+    };
+
+    block.addEventListener('animationend', handleAnimationEnd);
+    return () => block.removeEventListener('animationend', handleAnimationEnd);
+  }, [direction]);
 
   const handlePlay = () => {
-    setIsPlaying(true);
-    setTimeout(() => setIsPlaying(false), duration + 100);
+    if (!isPlaying) {
+      setDirection('forward');
+      setIsPlaying(true);
+    }
   };
 
+  const currentConfig = direction === 'forward' ? forwardConfig : backwardConfig;
+
   return (
-    <div className="flex flex-col gap-4 p-4 rounded-lg border border-gray-200">
-      <div className="flex justify-between items-center">
-        <div>
-          <h4 className="text-sm font-medium text-gray-600">{name}</h4>
-          <span className="block font-mono text-xs text-gray-500">
-            {duration}ms • {easing}
-          </span>
-          <span className="block mt-1 text-sm text-gray-500">
-            {description}
-          </span>
-        </div>
-        <button 
+    <div className="space-y-8 w-full max-w-3xl">
+      <div className="">
+        <AnimationControls
+          label="Animate In"
+          easing={forwardConfig.easing}
+          duration={forwardConfig.duration}
+          onEasingChange={(easing) => setForwardConfig(prev => ({ ...prev, easing }))}
+          onDurationChange={(duration) => setForwardConfig(prev => ({ ...prev, duration }))}
+        />
+
+        <AnimationControls
+          label="Animate Out"
+          easing={backwardConfig.easing}
+          duration={backwardConfig.duration}
+          onEasingChange={(easing) => setBackwardConfig(prev => ({ ...prev, easing }))}
+          onDurationChange={(duration) => setBackwardConfig(prev => ({ ...prev, duration }))}
+        />
+      </div>
+
+      <div className="overflow-hidden relative h-24 bg-[var(--ifm-background-color-subtle)] rounded-lg">
+        <div
+          ref={blockRef}
+          className={`absolute left-4 top-1/2 -translate-y-1/2 w-16 h-16 bg-white rounded-lg shadow-lg transition-colors
+            ${isPlaying ? (direction === 'forward' ? 'animate-move-forward' : 'animate-move-backward') : 'left-4'}`}
+          style={{
+            animationTimingFunction: currentConfig.easing,
+            animationDuration: currentConfig.duration,
+            animationFillMode: 'forwards',
+          }}
+        />
+      </div>
+
+      <div className="flex justify-center">
+        <button
           onClick={handlePlay}
-          className="px-4 py-2 text-white bg-blue-500 rounded-lg transition-colors hover:bg-blue-600"
+          disabled={isPlaying}
+          className={`inline-flex items-center px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500
+            ${isPlaying 
+              ? 'bg-gray-400 cursor-not-allowed' 
+              : 'text-white bg-blue-600 hover:bg-blue-700'}`}
         >
-          Play
+          <Play className="w-5 h-5" />
+          <span className="ml-2">Play</span>
         </button>
       </div>
-      <AnimatedBox duration={duration} easing={easing} isPlaying={isPlaying} />
     </div>
   );
-};
+}
 
-const MotionRow = ({ title, items }) => (
-  <div className="flex flex-col gap-8">
-    <h3 className="m-0 text-xl font-semibold">{title}</h3>
-    <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-      {items.map((item) => (
-        <MotionCard key={item.name} {...item} />
-      ))}
-    </div>
-  </div>
-);
-
-const MotionTokens = () => {
-  const durations = [
-    
-    {
-      name: 'Duration-100',
-      duration: 100,
-      easing: 'cubic-bezier(0.4, 0, 0.2, 1)',
-      description: 'Quick micro-interactions, like button hover states'
-    },
-    {
-      name: 'Duration-200',
-      duration: 200,
-      easing: 'cubic-bezier(0.4, 0, 0.2, 1)',
-      description: 'Simple transitions, like color changes'
-    },
-    {
-      name: 'Duration-300',
-      duration: 300,
-      easing: 'cubic-bezier(0.4, 0, 0.2, 1)',
-      description: 'Complex transitions, like sliding panels'
-    },
-    {
-      name: 'Duration-500',
-      duration: 500,
-      easing: 'cubic-bezier(0.4, 0, 0.2, 1)',
-      description: 'Large transitions, like full page animations'
-    }
-  ];
-
-  const easings = [
-    {
-      name: 'Ease-Linear',
-      duration: 300,
-      easing: 'linear',
-      description: 'Constant speed from start to end'
-    },
-    {
-      name: 'Ease-In',
-      duration: 300,
-      easing: 'cubic-bezier(0.4, 0, 1, 1)',
-      description: 'Start slow, end fast'
-    },
-    {
-      name: 'Ease-Out',
-      duration: 300,
-      easing: 'cubic-bezier(0, 0, 0.2, 1)',
-      description: 'Start fast, end slow'
-    },
-    {
-      name: 'Ease-In-Out',
-      duration: 300,
-      easing: 'cubic-bezier(0.4, 0, 0.2, 1)',
-      description: 'Start and end slow, fast in the middle'
-    }
-  ];
-
-  return (
-    <div className="flex flex-col gap-16">
-      <MotionRow title="Duration" items={durations} />
-      <MotionRow title="Easing" items={easings} />
-    </div>
-  );
-};
-
-export default MotionTokens;
+export default Motion;

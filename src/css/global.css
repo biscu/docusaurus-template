@@ -121,6 +121,36 @@ a {
   background: var(--ifm-caret-color-hover) !important;
 }
 
+
+/* Animation componebnt */
+@keyframes move-forward {
+  from {
+    left: 16;
+  }
+  to {
+    left: calc(100% - 5rem); /* 4rem = w-16 */
+  }
+}
+
+@keyframes move-backward {
+  from {
+    left: calc(100% - 5rem);
+  }
+  to {
+    left: 16;
+  }
+}
+
+.animate-move-forward {
+  animation-name: move-forward;
+  animation-play-state: running;
+}
+
+.animate-move-backward {
+  animation-name: move-backward;
+  animation-play-state: running;
+}
+
 /*Styling searchbar*/
 
 @media only screen and (max-width: 768px) {
