@@ -210,8 +210,8 @@ mark {
 }
 
 .menu__link {
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 /*remove pagination*/
@@ -222,9 +222,9 @@ mark {
 /*Add line to the menu item in sidebar*/
 
 .menu__list .menu__list {
-  border-bottom: 2px solid var(--ifm-color-emphasis-200);
+  border-bottom: transparent !important;
   border-bottom-color: transparent !important;
-  border-left: 2px solid var(--ifm-color-emphasis-200);
+  border-left: 1px solid var(--ifm-toc-border-color);
   /* border-radius: 0 0 0 20px; */
 }
 
